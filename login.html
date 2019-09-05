@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,47 +13,54 @@
     <!-- Main css -->
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
     <div class="main">
 
-        <!-- Sing in  Form -->
-      
+        <!-- Sign in interface -->
+
         <section class="sign-in">
             <div class="container">
                 <div class="signin-content">
                     <div class="signin-image">
                         <figure><img src="images/signin-image.jpg" alt="sing up image"></figure>
-                    
+
                     </div>
 
                     <div class="signin-form">
                         <h2 class="form-title">Login</h2>
                         <h1 id="ajax-response"></h1>
-                        <form method="POST" class="register-form" id="login-form" action="https://tissec.com/new/1/signup-login/api/User/login.php">
+
+                        <!-- Form for login -->
+                        <form method="POST" class="register-form" id="login-form"
+                            action="https://tissec.com/new/1/signup-login/api/User/login.php">
                             <div class="form-group">
                                 <label for="email"><i class="zmdi zmdi-email"></i></label>
-                                <input type="email" id="username" name="username" placeholder="Your Email"/>
+                                <input type="email" id="username" name="username" placeholder="Your Email" />
                             </div>
                             <div class="form-group">
                                 <label for="your_pass"><i class="zmdi zmdi-lock"></i></label>
-                                <input type="password" id="password" name="password" placeholder="Password"/>
+                                <input type="password" id="password" name="password" placeholder="Password" />
                             </div>
-    
+
                             <div class="form-group form-button">
-                                <input type="submit" name="login" class="form-submit" value="Log in"/>
+                                <input type="submit" name="login" class="form-submit" value="Log in" />
                             </div>
                         </form>
-            
+
                     </div>
                 </div>
             </div>
         </section>
-        
+
 
     </div>
 
     <script src="jquery.min.js"></script>
+
+    <!-- Main Js file for Ajax Jquery -->
     <script src="js/main.js"></script>
 </body>
+
 </html>
